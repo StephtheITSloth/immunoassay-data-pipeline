@@ -35,12 +35,32 @@ This project demonstrates practical bioinformatics data processing skills by imp
 ```bash
 # Python 3.8 or higher
 python --version
-
-# Install required packages
-pip install pandas numpy matplotlib scipy
 ```
 
-### Basic Usage
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/StephtheITSloth/immunoassay-data-pipeline.git
+   cd immunoassay-data-pipeline
+   ```
+
+2. **Create a virtual environment (recommended)**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On macOS/Linux
+   # or
+   venv\Scripts\activate     # On Windows
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Running the Project
+
+#### Basic Usage
 
 ```bash
 # Run the basic ELISA processor
@@ -50,7 +70,7 @@ python elisa_processor.py
 Enter the path to the ELISA data CSV file: data/elisa_data.csv
 ```
 
-### Advanced Analysis
+#### Advanced Analysis
 
 ```bash
 # Run the advanced analysis with standard curve fitting
@@ -59,6 +79,17 @@ python advanced_elisa_analysis.py
 # Enter paths when prompted
 Enter path to ELISA data CSV: data/elisa_data.csv
 Enter path to standard values CSV: data/standard_values.csv
+```
+
+### Testing
+
+Run the test suite to verify the installation:
+
+```bash
+# Run all tests with verbose output
+python -m pytest tests/ -v
+
+# Expected output: 16 tests passed
 ```
 
 ## 📁 Project Structure
@@ -184,14 +215,24 @@ Sample2: OD = 0.3090, Conc = 12.87 ng/ml
 Run the test suite to verify functionality:
 
 ```bash
+# Run all tests
 python -m pytest tests/
+
+# Run with verbose output
+python -m pytest tests/ -v
+
+# Run with coverage report
+python -m pytest tests/ --cov=. --cov-report=html
 ```
 
-Tests cover:
-- Data loading and validation
-- Mathematical calculations
-- Edge cases (missing blanks, out-of-range values)
-- File I/O operations
+The test suite includes **16 comprehensive tests** covering:
+- ✓ Data loading and validation
+- ✓ Average OD calculations
+- ✓ Blank correction and corrected OD calculations
+- ✓ Mathematical calculations and curve fitting
+- ✓ Edge cases (missing blanks, out-of-range values, single samples)
+- ✓ File I/O operations
+- ✓ Real-world dataset validation
 
 ## 🎓 Skills Demonstrated
 

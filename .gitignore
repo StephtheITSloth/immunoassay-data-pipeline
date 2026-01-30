@@ -59,6 +59,9 @@ env/
 *~
 .DS_Store
 
+# Documentation
+docs/
+
 # Jupyter Notebook
 .ipynb_checkpoints
 
