@@ -1,0 +1,25 @@
+======================================================================
+ELISA ANALYSIS REPORT
+======================================================================
+
+Blank OD: 0.1225
+
+Standard Curve Parameters (4PL Model):
+  A (min asymptote): -0.0803
+  B (Hill slope): 0.7351
+  C (EC50): 7.3803
+  D (max asymptote): 0.9279
+
+Sample Results:
+----------------------------------------------------------------------
+Sample1: OD = 0.3430, Conc = 11.46 ng/ml
+Sample2: OD = 0.3090, Conc = 13.87 ng/ml
+Sample3: OD = 0.2245, Conc = 23.02 ng/ml
+Sample4: OD = 0.2495, Conc = 19.69 ng/ml
+Sample5: OD = 0.3205, Conc = 12.99 ng/ml
+Sample6: OD = 0.2670, Conc = 17.71 ng/ml
+Sample7: OD = 0.2435, Conc = 20.43 ng/ml
+Sample8: OD = 0.2070, Conc = 25.80 ng/ml
+Sample9: OD = 0.3155, Conc = 13.36 ng/ml
+Sample10: OD = 0.2430, Conc = 20.49 ng/ml
+======================================================================
